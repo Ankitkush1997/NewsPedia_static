@@ -67,7 +67,7 @@
     top: 62px;
     left: -100%;
     text-align: center;
-    transition: all 0.5s;
+    transition: all 0.4s;
   }
   .nav-area ul li {
     display: block;
