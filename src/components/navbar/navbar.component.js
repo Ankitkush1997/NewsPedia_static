@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as News } from "../../assets/news.svg";
 import SigningText from "../SigningText/SigningText";
@@ -6,6 +6,10 @@ import SigningText from "../SigningText/SigningText";
 
 import "./navbar.styles.css";
 const Navbar = () => {
+  const refclose = useRef(null)
+ const setTorla = () =>{
+   refclose.current.click()
+ }
   return (
     <div style={{ postion: "fixed" }}>
       <div style={{ height: "60px" }}>
@@ -35,10 +39,10 @@ const Navbar = () => {
             NewsPedia
           </div>
           <input type="checkbox" id="box" />
-          <label htmlFor="box" className="btn-area">
+          <label ref={refclose} htmlFor="box" className="btn-area">
             <i className="fa fa-bars"></i>
           </label>
-          <ul>
+          <ul onClick={setTorla}>
             <li >
               <Link to="/general">General</Link>
             </li>
