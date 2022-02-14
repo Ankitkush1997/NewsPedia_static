@@ -52,9 +52,6 @@ const Navbar = () => {
             <li>
               <Link to="/entertainment">Entertainment</Link>
             </li>
-//             <li>
-//               <Link to="/health">Health</Link>
-//             </li>
             <li>
               <Link to="/science">Science</Link>
             </li>
