@@ -29,9 +29,6 @@ const App = () => {
         <Route exact path="/entertainment">
           <Card newsType={allDataObject.Entertainment}/>
         </Route>
-        <Route exact path="/health">
-          <Card newsType={allDataObject.health}/>
-        </Route>
         <Route exact path="/science">
           <Card newsType={allDataObject.science}/>
         </Route>
